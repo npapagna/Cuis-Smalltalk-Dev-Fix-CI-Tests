@@ -9,7 +9,7 @@ ChangeSet fileIn: DirectoryEntry currentDirectory // '.ContinuousIntegrationScri
 
 testSuite := TestSuite new.
 testCases := TestCase allSubclasses reject: [:testCase | testCase isAbstract].
-testCases do: [:testCase | testCase addToSuiteFromSelectors: testSuite].
+FloatTest addToSuiteFromSelectors: testSuite.
 
 result := testSuite run.
 
