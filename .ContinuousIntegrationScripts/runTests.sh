@@ -20,4 +20,5 @@ case $RUNNER_OS in
     runTestsOnMacOS ;;
 esac
 
+
 echo "Exit code was $?"
